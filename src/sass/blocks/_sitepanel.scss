@@ -1,0 +1,36 @@
+.sitepanel{
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    
+
+
+    &__line{
+        height: 70px;
+        width: 2px;
+        background-color: #fff;
+    }
+
+
+    &__text{
+        height: 150px;
+        width: 25px;
+        color:#fff;
+        span{
+            display: block;
+            transform: rotate(-90deg ) translate(-30%,-265%);
+            width: 150px;
+        }
+    }
+
+
+    &__link{
+        color: #fff;
+    }
+}

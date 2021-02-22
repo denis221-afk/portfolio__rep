@@ -1,0 +1,77 @@
+.promo{
+    min-height: 800px;
+    position: relative;
+    background: url('../img/P1030814 - Kopia.JPG') no-repeat 50%/cover;
+    padding-top: 205px;
+    color: #fff;
+
+
+    &__title{
+        max-width: 535px;
+        margin-top: 10px;
+        
+    }
+
+
+    &__btns{
+        margin-top: 25px;
+        max-width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        
+    }
+
+
+    &__link{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+        color: #FFFFFF;
+
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+
+    &__subtitle{
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circele;
+    }
+
+
+}
+
+
+.huburger{
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 30px;
+    span{
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    span.long{
+        width: 36px;
+    }
+}
+
+
