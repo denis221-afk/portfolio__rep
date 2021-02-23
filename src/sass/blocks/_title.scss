@@ -13,7 +13,26 @@
         line-height: 24px;
     }
 
+
+    &_fz20{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
     &_fz48{
         font-size: 48px;
+    }
+
+
+
+    &__long{
+       &::after{
+        content: '';
+        width: 60px;
+        height: 2px;
+        background-color:$orange;
+        display: block;
+        margin: 0 auto;
+    }
     }
 }

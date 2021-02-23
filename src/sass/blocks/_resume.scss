@@ -1,0 +1,142 @@
+.resume{
+    padding-top: 120px;
+   
+    
+
+    &__title{
+        font-size: 21px;
+        text-align: center;
+        position: relative;
+        @include before_circele;
+
+        &:before{
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle{
+        text-align: center;
+       
+
+        
+       &::after{
+        content: '';
+        width: 60px;
+        height: 2px;
+        background-color:$orange;
+        display: block;
+        margin: 0 auto;
+    }
+    }
+
+
+
+    &__wrepper{
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+
+    &__column{
+
+
+        &-title{
+            position: relative;
+            padding-left: 35px;
+            &::before{
+                content:'';
+                width: 15px;
+                height: 15px;
+                background-color: $orange;
+                border-radius: 100%;
+                position: absolute;
+                left: -7px;
+                top:50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        ul{
+            list-style-type: none;
+            li{
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    background-color: #000;
+                }
+            }
+        }
+
+      
+    }
+
+
+
+    &__iteam{
+
+        position: relative;
+        &::before{
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            top: 63px;
+            background-color:#000;
+        }
+
+        &-head{
+            position: relative;
+            padding: 45px 0 0 100px;
+
+
+            h4{
+                margin-bottom: 0;
+            }
+        }
+
+        &-body{
+            padding-left: 43px;
+            margin-top: 12px;
+        }
+
+        &-icon{
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include before_circele;
+            img{
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+
+        &-location{
+            margin-top: 5px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            /* identical to box height */
+
+            color: #000000;
+
+        }
+
+        &-body{
+            font-size: 12px;
+            line-height: 18px;
+
+            color: #000000;
+        }
+    }
+}
