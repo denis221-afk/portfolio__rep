@@ -1,0 +1,80 @@
+.prise{
+    padding-top: 60px;
+
+
+    
+
+    &__title{
+        text-align: center;
+        @include before_circele;
+        position: relative;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &::after{
+            content: '';
+            width: 60px;
+            height: 2px;
+            background-color:$orange;
+            display: block;
+            margin: 25px auto;
+        }
+
+    }
+
+
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 340px);
+        grid-template-rows: 45px;
+        justify-content: space-between;
+        grid-auto-rows: auto;
+        row-gap: 15px;
+    }
+
+
+    &__iteam{
+        padding-left: 30px;
+         span{
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            /* identical to box height */
+            
+            
+            color: #000000;
+        }
+
+        &-title{
+            display: flex;
+            justify-content: space-between;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+            /* identical to box height */
+            @include before_circele;
+            position: relative;
+            color: #000000;
+
+
+            &::before{
+                top: 4px;
+                left: -30px;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
